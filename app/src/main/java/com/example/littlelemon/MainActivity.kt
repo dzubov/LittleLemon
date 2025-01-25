@@ -199,7 +199,7 @@ class MainActivity : ComponentActivity() {
                 Row(
                     horizontalArrangement = Arrangement.SpaceBetween,
                     modifier = Modifier
-                        .padding(top = 10.dp)
+                        .padding(top = 5.dp)
                 ) {
                     Text(
                         text = stringResource(id = R.string.description),
@@ -224,12 +224,11 @@ class MainActivity : ComponentActivity() {
                 OutlinedTextField(
                     value = searchPhrase.value,
                     onValueChange = { searchPhrase.value = it },
-                    label = { Text("Search") },
+                    label = { Text("Enter search phrase here") },
                     modifier = Modifier
                         .fillMaxWidth()
-                        .padding(top = 0.dp, start = 50.dp, end = 50.dp)
+//                        .padding(top = 0.dp, start = 50.dp, end = 50.dp)
                         .background(Color.White)
-                        .clip(RoundedCornerShape(10.dp))
                 )
 
                 // add is not empty check here
